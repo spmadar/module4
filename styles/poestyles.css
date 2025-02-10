@@ -1,6 +1,7 @@
 /* Import gothic/p tag fonts */
 @import url('https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=EB+Garamond:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
 
 /* Home Page Background with transparency */
 body.home {
@@ -20,6 +21,14 @@ body.tell-tale-heart {
     background-position: center;
 }
 
+/* ensuring that contrast is satisfied */
+body.tell-tale-heart h1,
+body.tell-tale-heart h2,
+body.tell-tale-heart a {
+    color: white !important;
+}
+
+
 /* Lenore background */
 body.lenore {
     background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), 
@@ -34,14 +43,15 @@ h1 {
     font-family: 'Almendra SC', serif;
     font-size: 3em;
     text-align: center;
+    word-spacing: 5px;
     color: #1a1a1a;
 }
 
 h2 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Lora', serif;
     font-size: 2em;
     text-align: center;
-    color: #3d3d3d;
+    color: #1a1a1a;
     margin-bottom: 15px;
 }
 
@@ -59,6 +69,17 @@ p {
     border-radius: 10px;
 }
 
+ul {
+    text-align: center;
+    padding-left: 0;
+}
+
+ul li {
+    display: inline-block; /* Keeps them inline */
+    margin: 10px 20px; /* Adds spacing */
+    font-size: 1em; /* Make links bigger */
+}
+
 /* link visibility */
 ul li a {
     color: #7a0000; /* Darker Red */
@@ -73,8 +94,8 @@ ul li a:hover {
 
 /* Centered and cleaner table */
 table {
-    width: 70%; /* Reduce width */
-    margin: 20px auto; /* Center it */
+    width: 50%; /* Reduce width */
+    margin: 30px auto; /* Center it */
     border-collapse: collapse;
     background-color: white; /* Ensure readability */
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
@@ -82,13 +103,14 @@ table {
 
 /* Fix table readability */
 th, td {
+    font-size: 1.3em;
     padding: 15px;
     text-align: center;
     border: 1px solid black;
 }
 
 th {
-    background-color: #3a3a3a;
+    background-color: #2c2c2c;
     color: white;
     font-weight: bold;
     font-family: 'Cormorant Garamond', serif;
@@ -108,12 +130,14 @@ td {
     max-width: 800px;
 }
 
-/* Fix home link visibility */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
 a {
-    text-decoration: none;
-    color: #7a0000;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1em;
     font-weight: bold;
-    transition: 0.3s;
+    color: #7a0000;
+    transition: 0.5s;
 }
 
 a:hover {
