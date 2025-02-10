@@ -6,7 +6,7 @@
 
 /* Home Page Background with transparency */
 body.home {
-    background: linear-gradient(rgba(255, 255, 255, 0.276), rgba(255, 255, 255, 0.7)), 
+    background: linear-gradient(rgba(255, 255, 255, 0.334), rgba(255, 255, 255, 0.774)), 
                 url('../images/crow.jpeg') no-repeat center center fixed;
     background-size: cover;
     background-attachment: fixed;
