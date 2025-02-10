@@ -1,48 +1,34 @@
 /* subtle background image with controlled opacity */
 
-body.home::before {
-    content: "";
+/* Import gothic/p tag fonts */
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=EB+Garamond:wght@400;700&display=swap');
+
+
+body.home {
     background: url('../images/crow.jpeg') no-repeat center center fixed;
     background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.4; /* Subtle faded effect */
-    z-index: -1;
+    background-attachment: fixed;
+    background-position: center;
 }
 
-/* Background for The Tell-Tale Heart */
-body.tell-tale-heart::before {
-    content: "";
+body.tell-tale-heart {
     background: url('../images/heart.jpeg') no-repeat center center fixed;
     background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
     opacity: 0.5;
-    z-index: -1;
 }
 
-/* Background for Lenore */
-body.lenore::before {
-    content: "";
+body.lenore {
     background: url('../images/lenore.jpg') no-repeat center center fixed;
     background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
     opacity: 0.5;
-    z-index: -1;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
-
+/* declaring Gothic typography */
 h1 {
     font-family: 'UnifrakturMaguntia', cursive;
     font-size: 3em;
@@ -52,57 +38,53 @@ h1 {
 }
 
 h2 {
-    font-family: 'Copperplate Gothic', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 2em;
-    color: #3d3d3d;
     text-align: center;
+    color: #3d3d3d;
     margin-bottom: 15px;
 }
 
-p {
-    font-family: 'Garamond', serif;
+p, ul li, td {
+    font-family: 'EB Garamond', serif;
     font-size: 1.2em;
     line-height: 1.6;
     color: #2b2b2b;
     text-align: justify;
-    margin: 15px;
 }
 
-/* Styling for unordered list */
+/* Link styling */
 ul {
     list-style-type: square;
-    padding: 20px;
-    margin: 0;
+    padding-left: 30px;
 }
 
 ul li {
-    font-size: 1.3em;
+    font-size: 1.4em;
+    color: #8b0000;
     margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Styling and cool hover effects for links */
 ul li a {
-    font-size: 1.5em;
     text-decoration: none;
-    color: #b30000; /* Deep red color */
+    color: #b30000;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
-    position: relative;
 }
 
-/* Cool hover effect: Make the link pop out with a bold black shadow */
 ul li a:hover {
     text-shadow: 4px 4px 10px black;
     transform: scale(1.1);
-    color: #ff0000; /* Brighter red */
+    color: #ff0000;
 }
 
-/* Table styling */
+/* table styling */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
 }
 
@@ -111,10 +93,6 @@ caption {
     font-weight: bold;
     margin-bottom: 10px;
     color: #3d3d3d;
-}
-
-tr {
-    border-bottom: 1px solid black;
 }
 
 th, td {
@@ -127,13 +105,14 @@ th {
     background-color: #3a3a3a;
     color: white;
     font-weight: bold;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 td {
     background-color: #e6e6e6;
 }
 
-/* Add spacing and shadow effects to elements */
+/* improve layout with spacing */
 .card {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     padding: 15px;
@@ -141,7 +120,7 @@ td {
     border-radius: 10px;
 }
 
-/* Buttons with hover effect */
+/* buttons with hover effect */
 .button {
     background-color: #5c0000;
     color: white;
@@ -156,7 +135,6 @@ td {
     background-color: #8b0000;
 }
 
-/* Home page link styling */
 a {
     text-decoration: none;
     color: #7a0000;
@@ -170,12 +148,10 @@ a:hover {
     transform: scale(1.1);
 }
 
-/* Center elements */
 .center {
     text-align: center;
 }
 
-/* Boxed content sections */
 .box {
     background-color: rgba(255, 255, 255, 0.85);
     padding: 20px;
@@ -185,8 +161,7 @@ a:hover {
 }
 
 /* 
-Comment: 
-1. The hover effects on links give them a dramatic appearance fitting Poe's gothic aesthetic.
-2. The opacity settings allow different visual styles for each poem while keeping readability.
-3. Tables have a vintage book-like feel with soft contrasting colors.
+Backgrounds now apply directly to `body`, fixing visibility issues.
+The font styling is more elegant while keeping a gothic H1.
+Cleaned up redundant code for efficiency.
 */
