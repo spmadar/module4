@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=EB+Garamond:wght@400;700&display=swap');
 
 /* background images with controlled opacity */
-body {
+body.home {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
                 url('../images/crow.jpeg') no-repeat center center fixed;
     background-size: cover;
@@ -11,29 +11,31 @@ body {
     background-position: center;
 }
 
+/* Tell-Tale Heart Background */
 body.tell-tale-heart {
-    background: url('../images/heart.jpeg') no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('../images/heart.jpeg') no-repeat center center fixed;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    opacity: 0.5;
 }
 
+/* Lenore Background */
 body.lenore {
-    background: url('../images/lenore.jpg') no-repeat center center fixed;
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), 
+                url('../images/lenore.jpg') no-repeat center center fixed;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    opacity: 0.5;
 }
+
 
 /* declaring Gothic typography */
 h1 {
-    font-family: 'Almendra SC', serif;
+    font-family: 'Almendra SC';
     font-size: 3em;
     text-align: center;
     color: #1a1a1a;
-    text-transform: uppercase;
 }
 
 h2 {
