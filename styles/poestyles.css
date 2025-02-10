@@ -71,8 +71,10 @@ p {
 }
 
 a {
+    text-align: center;
+    text-decoration: none;
     font-family: 'Libre Baskerville', serif;
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: bold;
     color: #7a0000;
     transition: 0.5s;
@@ -113,15 +115,16 @@ ul li a:hover {
 
 caption {
     font-size: 1.6em;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Lora', serif;
     color: #111;
     font-weight: bold;
 }
 
 /* Centered and cleaner table */
 table {
-    width: 50%; /* Reduce width */
+    width: 60%; /* Reduce width */
     margin: 20px auto; /* Center it */
+    margin-bottom: 50px;
     border-collapse: collapse;
     background-color: white; /* Ensure readability */
     box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
@@ -130,6 +133,7 @@ table {
 }
 
 th {
+    border-radius: 10px;
     text-align: center;
     font-size: 1.4em;
     font-family: 'Cormorant Garamond', serif;
