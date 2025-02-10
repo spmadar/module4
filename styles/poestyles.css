@@ -135,7 +135,7 @@ caption {
 table {
     width: 60%; /* Reduce width */
     margin: 20px auto; /* Center it */
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     border-collapse: collapse;
     background-color: white; /* Ensure readability */
     box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
