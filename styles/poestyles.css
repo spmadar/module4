@@ -1,10 +1,186 @@
-body {
-max-width: 60em;
-margin: 0 auto 0 auto;
+/* Apply a subtle background image with controlled opacity */
+body::before {
+    content: "";
+    background: url('../images/crow.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4; /* Faded effect for readability */
+    z-index: -1;
 }
 
-table, th, td {
-border-collapse: collapse;
-border: 1px solid #000;
-padding: 1em;
+/* Ensure content remains visible */
+body {
+    max-width: 60em;
+    position: relative;
+    font-family: 'Garamond', serif;
+    color: #2b2b2b;
+    margin: 0 auto 0 auto;
+    padding: 0;
 }
+
+/* Backgrounds for different poems */
+body.tell-tale-heart {
+    background-image: url('../images/heart.jpeg'); /* Unique background for Tell-Tale Heart */
+    background-size: cover;
+    opacity: 0.95;
+}
+
+body.lenore {
+    background-image: url('../images/lenore.jpg'); /* Unique background for Lenore */
+    background-size: cover;
+    opacity: 0.95;
+}
+
+/* Font styles for different elements */
+h1 {
+    font-family: 'Old English Text MT', serif;
+    font-size: 3em;
+    color: #1a1a1a;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Copperplate Gothic', serif;
+    font-size: 2em;
+    color: #3d3d3d;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+p {
+    font-family: 'Garamond', serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #2b2b2b;
+    text-align: justify;
+    margin: 15px;
+}
+
+/* Styling for unordered list */
+ul {
+    list-style-type: square;
+    padding: 20px;
+    margin: 0;
+}
+
+ul li {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+/* Styling and cool hover effects for links */
+ul li a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #b30000; /* Deep red color */
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Cool hover effect: Make the link pop out with a bold black shadow */
+ul li a:hover {
+    text-shadow: 4px 4px 10px black;
+    transform: scale(1.1);
+    color: #ff0000; /* Brighter red */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #3d3d3d;
+}
+
+tr {
+    border-bottom: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+th {
+    background-color: #3a3a3a;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: #e6e6e6;
+}
+
+/* Add spacing and shadow effects to elements */
+.card {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+/* Buttons with hover effect */
+.button {
+    background-color: #5c0000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #8b0000;
+}
+
+/* Home page link styling */
+a {
+    text-decoration: none;
+    color: #7a0000;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #ff0000;
+    text-shadow: 3px 3px 8px black;
+    transform: scale(1.1);
+}
+
+/* Center elements */
+.center {
+    text-align: center;
+}
+
+/* Boxed content sections */
+.box {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 
+Comment: 
+1. The hover effects on links give them a dramatic appearance fitting Poe's gothic aesthetic.
+2. The opacity settings allow different visual styles for each poem while keeping readability.
+3. Tables have a vintage book-like feel with soft contrasting colors.
+*/
