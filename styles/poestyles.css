@@ -37,7 +37,7 @@ body.tell-tale-heart a:hover {
 
 /* Lenore background */
 body.lenore {
-    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), 
+    background: linear-gradient(rgba(255, 255, 255, 0.948), rgb(255, 255, 255)), 
                 url('../images/lenore.jpg') no-repeat center center fixed;
     background-size: cover;
     background-attachment: fixed;
