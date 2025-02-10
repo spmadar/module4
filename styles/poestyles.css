@@ -29,6 +29,11 @@ body.tell-tale-heart a {
     color: white !important;
 }
 
+body.tell-tale-heart a:hover {
+    color: white;
+    text-shadow: 2px 2px 8px red; /* Subtle red glow */
+    transform: scale(1.1);
+}
 
 /* Lenore background */
 body.lenore {
@@ -37,6 +42,13 @@ body.lenore {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+}
+
+body.tell-tale-heart a,
+body.lenore a {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
 }
 
 /* Gothic typography */
@@ -71,7 +83,6 @@ p {
 }
 
 a {
-    text-align: center;
     text-decoration: none;
     font-family: 'Libre Baskerville', serif;
     font-size: 1em;
@@ -143,7 +154,16 @@ th {
     padding: 15px;
 }
 
+th:first-child {
+    border-top-left-radius: 12px; /* Round only top-left */
+}
+
+th:last-child {
+    border-top-right-radius: 12px; /* Round only top-right */
+}
+
 td {
+    border: 0;
     padding: 15px;
     text-align: center;
     font-size: 1.2em;
