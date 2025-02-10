@@ -21,4 +21,4 @@ The goal was to **edit and enhance** the given style sheet without modifying the
 🔹 Poe-themed fonts for `h1`, `h2`, and `p`  
 🔹 Unique backgrounds for *Lenore* and *The Tell-Tale Heart*  
 🔹 Styled links with hover effects  
-🔹 Button enhancements for interaction  
+
