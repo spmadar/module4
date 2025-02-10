@@ -145,7 +145,6 @@ table {
 }
 
 th {
-    border-radius: 10px;
     text-align: center;
     font-size: 1.4em;
     font-family: 'Cormorant Garamond', serif;
@@ -155,12 +154,13 @@ th {
     padding: 15px;
 }
 
+/* Properly round only the first and last header cells */
 th:first-child {
-    border-top-left-radius: 12px; /* Round only top-left */
+    border-top-left-radius: 12px;
 }
 
 th:last-child {
-    border-top-right-radius: 12px; /* Round only top-right */
+    border-top-right-radius: 12px;
 }
 
 td {
@@ -170,6 +170,15 @@ td {
     font-size: 1.2em;
     background-color: #f8f8f8;
     font-family: 'EB Garamond', serif;
+}
+
+/* Round the bottom-left and bottom-right corners (last row) */
+tr:last-child td:first-child {
+    border-bottom-left-radius: 12px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 12px;
 }
 
 /* Improve content box visibility */
