@@ -30,7 +30,7 @@ body.lenore {
 
 /* declaring Gothic typography */
 h1 {
-    font-family: 'UnifrakturMaguntia', cursive;
+    font-family: 'UnifrakturMaguntia';
     font-size: 3em;
     text-align: center;
     color: #1a1a1a;
