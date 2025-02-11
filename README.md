@@ -8,6 +8,8 @@ This project is a **mini website** dedicated to Edgar Allan Poe, featuring a **h
 ### **Hosted Website:**  
 [View the website here](https://spmadar.github.io/module4/index.html)
 
+I renamed poe.html to index.html because GitHub Pages requires an index.html file as the default landing page. Without this change, visitors would have to manually enter the full file name in the URL instead of the site loading automatically.
+
 ## Assignment Requirements  
 The goal was to **edit and enhance** the given style sheet without modifying the HTML structure unless necessary. The following requirements were met:  
 
