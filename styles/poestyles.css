@@ -29,7 +29,8 @@ body.tell-tale-heart a {
     color: white !important;
 }
 
-body.tell-tale-heart a:hover {
+body.tell-tale-heart a:hover,
+body.lenore a:hover {
     color: white;
     text-shadow: 2px 2px 8px red; /* Subtle red glow */
     transform: scale(1.1);
